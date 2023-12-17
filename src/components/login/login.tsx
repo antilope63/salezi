@@ -40,9 +40,16 @@ export default function AuthenticationPage() {
         >
           Login
         </Link>
-        <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex">
+        <div className="relative hidden h-full flex-col bg-muted p-10 text-black font-bold dark:border-r lg:flex">
+        <Image
+            src="/image-form.png" // Replace with your actual image path
+            layout="fill"
+            objectFit="cover"
+            alt="Background"
+            className="absolute z-10" // You may adjust z-index as needed
+        />
           <div className="absolute inset-0 bg-zinc-900" />
-          <div className="relative z-20 flex items-center text-lg font-medium">
+          <div className="relative z-20 flex items-center text-lg font-bold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -60,9 +67,9 @@ export default function AuthenticationPage() {
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
-                la plateforme pour gerer vos commande 
+                la plateforme pour gerer vos commandes 
               </p>
-              <footer className="text-sm">Sofia Davis</footer>
+              <footer className="text-sm">Fnac</footer>
             </blockquote>
           </div>
         </div>
@@ -70,30 +77,14 @@ export default function AuthenticationPage() {
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
             <div className="flex flex-col space-y-2 text-center">
               <h1 className="text-2xl font-semibold tracking-tight">
-                Create an account
+                connexion
               </h1>
               <p className="text-sm text-muted-foreground">
-                Enter your email below to create your account
+                Entrer vos information pour vous connecter
               </p>
             </div>
             <UserAuthForm />
-            <p className="px-8 text-center text-sm text-muted-foreground">
-              By clicking continue, you agree to our{" "}
-              <Link
-                href="/terms"
-                className="underline underline-offset-4 hover:text-primary"
-              >
-                Terms of Service
-              </Link>{" "}
-              and{" "}
-              <Link
-                href="/privacy"
-                className="underline underline-offset-4 hover:text-primary"
-              >
-                Privacy Policy
-              </Link>
-              .
-            </p>
+            
           </div>
         </div>
       </div>
