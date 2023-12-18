@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "smartphones",
+  "info": {
+    "singularName": "smartphone",
+    "pluralName": "smartphones",
+    "displayName": "Smartphone",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Model": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "float"
+    },
+    "Color": {
+      "type": "string"
+    },
+    "Specifications": {
+      "type": "string"
+    },
+    "Storage": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
